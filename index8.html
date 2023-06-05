@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style8.css">
+    <script src="https://kit.fontawesome.com/243a8e6e90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2WaauQpObPSFdr34hKpkes5Sp1FZ7jEWkQ&usqp=CAU">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Anjali Mall</span><br> From Deoria,UP</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------About---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facere, eius beatae voluptas architecto blanditiis adipisci officiis facilis velit illo repellendus ipsa! Sed eveniet eum dolores voluptate odio vel nihil?</p>
+                    
+                <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab(skills)" >Skills</p>
+                     <p class="tab-links" onclick="opentab(education)"  >Education </p>
+                </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Java</span><br> Basic problem solving</li>
+                            <li><span> Web Development</span><br>web Development</li>
+                            <li><span>C</span><br>Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Apna College(online)</li>
+                            <li><span>2022</span><br>Code with Harry(online)</li>
+                            <li><span>2021</span><br>Lucknow University</li>
+                        </ul>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------Services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Created mobile responsive website by using HTML,CSS,JS.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Resume writing</h2>
+                    <p>Writing professional resume for placements , internship or Biodata.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web content writing</h2>
+                    <p>Writing Content that adds value to the reader's life.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="data:image/jpeg;base64,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" >
+                     <div class="layer">
+                        <h3> Food Delivery Website</h3>
+                        <p>Lorem  natus nihil debitis error unde vel accusamus dolore odit corrupti nobis aspernatur, animi reiciendis pariatur voluptatem facilis at.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8kP3VuCpxsW95Nbxf_Z6Wg9b0U_9y-oEs-Q&usqp=CAU" >
+                    <div class="layer">
+                        <h3>Myntra Clone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                     </div>
+                     </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vsgYGXXAXV_WUlBsaXvak-SJiIw_pEtQSg&usqp=CAU" >
+                    <div class="layer">
+                        <h3> Shopping website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus commodi magnam nam,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                     </div>
+                     </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-sharp fa-regular fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkdin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Anjali . Made<i class="fa-regular fa-heart"></i> by me</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementByClassName("tab-links");
+        var tabcontents = document.getElementByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL ='https://script.google.com/macros/s/AKfycbwuxCthnUgSbwXPD47D7nqJzGX5m2--zIJ01nCACG6dUCzpMTfhN0Qz3XtFZg1pLTrO/exec'
+        const form =document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e=>{
+            e.preventDefault()
+            fetch(scriptURL, {method: 'POST' , body: new FormData(form)})
+            .then(response=> {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error=> console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
